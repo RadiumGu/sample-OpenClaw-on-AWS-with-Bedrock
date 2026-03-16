@@ -2,7 +2,7 @@
 
 > [中文](skills/s3-vector-bucket/../../README_CN.md) | **English**
 
-Full lifecycle management OpenClaw Skill for **Amazon S3 Vectors**, covering vector buckets, indexes, and vector data with **16 core capabilities** + a **Skill Router** subsystem that reduces Token consumption by ~91%.
+Full lifecycle management OpenClaw Skill for **Amazon S3 Vectors**, covering vector buckets, indexes, and vector data with **16 core capabilities** + a **Skill Router** subsystem that reduces overall LLM bill by ~36%.
 
 ## What It Does
 
@@ -13,7 +13,7 @@ Full lifecycle management OpenClaw Skill for **Amazon S3 Vectors**, covering vec
 | **Index Management** | Create, query, list, delete vector indexes |
 | **Vector Data Operations** | Put/update, get, list, delete vectors |
 | **Similarity Search** | Top-K semantic search with metadata filtering |
-| **Skill Router** | Offline indexing + online routing + Hook, Token savings **~91%** |
+| **Skill Router** | Offline indexing + online routing + Hook, overall LLM bill reduction **~36%** |
 
 ## Key Features
 
@@ -48,7 +48,7 @@ openclaw hooks enable skill-router-hook
 
 ## Prerequisites
 
-- Python 3.8+ with `boto3`
+- Python 3.10+ with `boto3`
 - AWS credentials with `s3vectors:*` and `bedrock:InvokeModel` permissions
 - S3 Vectors available in your Region (us-east-1, us-west-2, eu-west-1, ap-northeast-1, ap-southeast-1)
 

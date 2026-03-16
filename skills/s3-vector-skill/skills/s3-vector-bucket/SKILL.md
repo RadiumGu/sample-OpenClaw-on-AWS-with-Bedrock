@@ -1,6 +1,6 @@
 ---
 name: s3-vector-bucket
-description: "Amazon S3 向量桶全功能管理技能。覆盖向量桶、索引、向量数据的全生命周期（16 个核心 CRUD 能力）。含 Skill 路由子系统，通过 S3 Vectors 相似度搜索动态筛选 Top-K Skill，Token 降本约 91%。基于 S3 Vectors（re:Invent 2025 GA）+ Bedrock Titan v2（1024d），成本比传统向量 DB 低约 90%。"
+description: "Amazon S3 向量桶全功能管理技能。覆盖向量桶、索引、向量数据的全生命周期（16 个核心 CRUD 能力）。含 Skill 路由子系统，通过 S3 Vectors 相似度搜索动态筛选 Top-K Skill，整体 LLM 账单降低约 36%（Skill 注入部分降低约 91%，仅首轮 bootstrap 生效）。基于 S3 Vectors（re:Invent 2025 GA）+ Bedrock Titan v2（1024d），成本比传统向量 DB 低约 90%。"
 triggers:
   - vector bucket
   - vector index
